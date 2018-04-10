@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Page not found | Matheus Seabra</title>
+
+    <link rel="canonical" href="https://lucasmauess.com/404">
+
+    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- <script async src="//www.googletagmanager.com/gtag/js?id=UA-60745752-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-60745752-1');
+    </script> -->
+</head>
+
+<body class="info-page">
+
+    <header role="banner">
+
+        <a id="logo" href="/">Lucas Maués</a>
+        <button id="menu" role="button" aria-label="open navigation menu" accesskey="1">Menu</button>
+
+        <nav role="navigation">
+			<button id="close" role="button" aria-label="close navigation menu" accesskey="2">Close</button>
+			<ul>
+				<li><a href="#work" accesskey="p">Work</a></li>
+				<li><a href="#services" accesskey="s">Skills</a></li>
+				<li><a href="https://medium.com/@matheuseabra" target="_blank" rel="noopener" accesskey="b">Blog</a></li>
+				<li><a href="#about" accesskey="a">About me</a></li>
+				<li><a href="#contact" accesskey="c">Get in touch</a></li>
+			</ul>
+		</nav>
+
+    </header>
+    
+    <section class="full-screen">
+
+        <div class="screen-container">
+
+            <div class="gif" id="background"></div>
+
+            <div class="left">
+                <h1><strong>Ops!</strong><br> Sorry, the page was not found. :(</h1>
+                <a href="/" class="button bounce">Back to homepage</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer role="contentinfo">
+        <p>&copy; 2018 Matheus Seabra. <a href="legal">Legal</a></p>
+    </footer>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js"></script>
+<script src="scripts/main.js"></script>
+<script>
+ var images = ['//media1.tenor.com/images/4f3eaeec930bab4f58e1e21d8b7b781d/tenor.gif', '//media1.tenor.com/images/c9e53c8837c1aa635a47280b6b3d788b/tenor.gif', '//media1.tenor.com/images/026d82064fe5cfaa6d07b7b4e621b5ff/tenor.gif', '//media1.tenor.com/images/225418a9d75b37de84a4bfbe886b08e8/tenor.gif'];
+ $('#background').css({'background-image': 'url(' + images[Math.floor(Math.random() * images.length)] + ')'});
+</script>
+
+</body>
+
+</html>
