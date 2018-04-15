@@ -670,15 +670,9 @@ article blockquote {
   margin-left: 5rem;
   width: 60%;
 }
-.card figure {
+.card i {
   float: left;
-  margin: 0;
-  height: 130px;
-  width: 130px;
-  background-color: transparent;
-  background-size: 130px;
-  background-repeat: no-repeat;
-  background-position: center;
+  color: #FFF;
 }
 .card h3 {
   max-width: 440px;
@@ -687,9 +681,7 @@ article blockquote {
 .card p {
   padding: 0;
 }
-/*.card a:last-child {
-  border: .35rem dashed #000;
-}*/
+
 .card a:last-child {
   margin-bottom: 0;
 }
