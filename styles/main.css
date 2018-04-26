@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'League Spartan';
+  src: url("../fonts/leaguespartan-bold.woff") format("woff");
+  font-weight: 700;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,700');
 
 :root { font-size: 16px; }
@@ -10,8 +16,9 @@ html, body, main {
 body {
   display: block;
   background: #222;
-  font-family: 'Maven Pro', sans-serif;
   overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
 }
 header {
   position: fixed;
@@ -24,6 +31,13 @@ header {
   z-index: 999;
 }
 header.scroll { }
+
+.colorful-healine {
+  background-image: -webkit-linear-gradient(45deg,#7cc8df,#FF9800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 5s infinite linear;
+}
 
 /* animations for headroom.js */
 .slide {
@@ -58,7 +72,7 @@ nav {
   height: 0;
   width: 100%;
   text-align: center;
-  background-image: -webkit-linear-gradient(45deg,#7cc8df,#FF9800);
+  background-color: #7cc8df;
   -webkit-transition: left 0ms 200ms, height 200ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
   transition: left 0ms 200ms, height 200ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
@@ -90,7 +104,8 @@ nav a {
   color: #111;
   display: block;
   padding: 1rem;
-  font-weight: 400;
+  font-family: 'League Spartan';
+  font-weight: 700;
   font-size: 3rem;
   margin: 1rem;
   line-height: 1.06;
@@ -222,6 +237,11 @@ p a, article a {
 p a:hover, p a:focus,
 article a:hover, article a:focus {
   text-decoration: underline;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'League Spartan';
+  font-weight: 700;
 }
 
 p, h1, h2, h3, h4, h5, h6, li {
@@ -454,14 +474,100 @@ article blockquote {
   color: #FFF;
 }
 
-#process {}
+/* Skills & Experience styles */
 
-.processGrid {
-  padding-top: 100px;
+.skillGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: minmax(250px, auto);
-  grid-gap: 10px;
+  grid-auto-rows: repeat(3, minmax(100px, auto));
+  grid-row-gap: 10px;
+  grid-column-gap: 30px;
+}
+
+.skillGrid .skill {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem;
+  margin: 1rem 0 0 0rem;
+  box-sizing: border-box;
+  background: #111;
+  color: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+
+.skillGrid .skill-title {
+  max-width: 550px;
+  margin: 0 0 1.5rem;
+  font-weight: 700;
+  color: #FFF; 
+}
+
+.skillGrid .skill-description {
+  padding: 0 0 1em 0;
+  color: #FFF;
+}
+
+.skillGrid ul li {
+  list-style-type: square;
+  color: #FFF;
+}
+
+.skill .skill-icon {
+  padding: 0 0 1em 0;
+  display: block;
+  color: #7CC8DF;
+}
+
+.skillGrid ul li {
+  margin: .5em 0 0 1em;
+}
+
+.skillGrid a:last-child {
+  margin-bottom: 0;
+}
+
+/* card */
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(200px, auto-fit);
+  grid-gap: 20px;
+}
+
+.card .skill {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 5rem 0 2rem;
+  box-sizing: border-box;
+}
+
+.card div {
+  float: left;
+  margin-left: 0rem;
+  width: 100%;
+}
+
+.card .skill-title {
+  max-width: 550px;
+  margin: 0 0 1.5rem;
+}
+.card .skill-description {
+  padding: 0 0 1em 0;
+}
+
+.card ul li {
+  margin: .5em 0 0 1em;
+}
+
+.card a:last-child {
+  margin-bottom: 0;
 }
 
 
@@ -662,7 +768,7 @@ article blockquote {
 
 /* card */
 
-.card a {
+/* .card a {
   position: relative;
   float: none;
   display: inline-block;
@@ -676,7 +782,7 @@ article blockquote {
 /*.card a:hover, .card a:focus {
   opacity: .8;
 }*/
-.card div {
+/* .card div {
   float: left;
   margin-left: 5rem;
   width: 60%;
@@ -695,7 +801,7 @@ article blockquote {
 
 .card a:last-child {
   margin-bottom: 0;
-}
+} */ */
 
 /* tiles */
 
