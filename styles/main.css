@@ -744,20 +744,23 @@ article blockquote {
   position: relative;
   display: inline-block;
   margin: 0;
-  padding: .875rem 1.8rem;
+  padding: 1rem 2rem;
   width: auto;
   height: auto;
   color: #7cc8df;
   background: transparent;
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 400;
   border: 2px solid #7cc8df;
-  border-radius: 0;
+  border-radius: 2px;
   vertical-align: middle;
+  transition: .2s all ease-in-out;
 }
 .button:hover, .button:focus {
   color: #FFF;
   background-color: #7cc8df;
+  transform: translateX(15px);
+  transition: .2s all ease-in-out;
 }
 
 /* card */
@@ -967,31 +970,21 @@ article blockquote {
 /* contact actions */
 
 .contact {
-  display: block;
-  float: left;
-  margin: 3rem 0 0;
-  width: 50%;
+  list-style-type: none;
+  margin: 3rem 0 1rem;
+  width: 50vw;
 }
-.contact a {
-  display: block;
-  position: relative;
-  display: inline-block;
-  float: left;
+.contact li {
   height: auto;
   width: auto;
-  margin: 0;
-  padding: 1.4rem 2.6rem;
-  box-sizing: border-box;
-  background-size: 26px;
-  background-repeat: no-repeat;
-  background-position: 0 52%;
-  text-align: left;
-  font-weight: 700;
-  font-size: 1.2rem;
+  margin: 1rem 0 1rem 0;
+  font-weight: 400;
+  font-size: 1.3rem;
   color: #FFF;
 }
+
 .contact a:hover, .contact a:focus {
-  opacity: .8;
+  text-decoration: underline;
 }
 
 /* form */
@@ -1032,7 +1025,7 @@ form input, form textarea {
   float: left;
   padding: 1.05rem 4%;
   margin: 0 0 4%;
-  background-color: #333;
+  background-color: #111;
   border: 2px solid #111;
   box-sizing: border-box;
   color: #fff;
@@ -1042,9 +1035,17 @@ form input, form textarea {
   -o-transition: all .3s;
   transition: all .3s;
   outline: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+form input:focus, form input:active {
+  background: #333;
+  border: 2px solid #333;
+  color: #FFF;
 }
 form textarea:focus,  form textarea:active {
   background: #333;
+  border: 2px solid #333;
   color: #FFF;
 }
 form input[type="submit"] {
