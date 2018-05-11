@@ -9,7 +9,7 @@ html, body, main {
 }
 body {
   display: block;
-  background: #222;
+  background: #000;
   overflow-x: hidden;
   font-family: 'Maven Pro', sans-serif;
   font-weight: 700;
@@ -270,24 +270,15 @@ h4 {
   font-size: 2rem;
 }
 
-hr {
+hr, .white-divider {
   width: 64px;
   clear: both;
   display: block;
   border: none;
   border-top: .35rem solid #7cc8df;
-  margin: 3rem 0 1.5rem;
+  margin: 1.5rem 0 2rem;
 }
 
-.white-divider {
-  width: 64px;
-  clear: both;
-  display: block;
-  border: none;
-  border-top: .35rem solid #7cc8df;
-  margin: 3rem 0 1.5rem;
-  border-top: .35rem solid #FFF;
-}
 img {
   max-width: 80%;
   height: auto;
@@ -485,12 +476,21 @@ article blockquote {
   padding: 2rem;
   margin: 1rem 0 0 0rem;
   box-sizing: border-box;
-  background: #111;
+  background: #222;
   color: #FFF;
   border-radius: 2px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+  transition: -webkit-transform 0.2s cubic-bezier(0.625,0.125,0.305,0.875);
+  transition: transform 0.2s cubic-bezier(0.625,0.125,0.305,0.875);
+  transition: transform 0.2s cubic-bezier(0.625,0.125,0.305,0.875),-webkit-transform 0.2s cubic-bezier(0.625,0.125,0.305,0.875);
 }
 
+.skill:hover {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+}
 
 
 .skillGrid .skill-title {
@@ -782,6 +782,7 @@ article blockquote {
   float: none;
   margin: 0;
   padding: 0;
+  border-radius: 2px;
   max-width: 48%;
   height: 497px;
   width: 100%;
@@ -846,7 +847,7 @@ article blockquote {
   transition: all .25s;
 }*/
 .tile a div {
-  padding: 3.4rem;
+  padding: 3rem;
 }
 
 .tile h3 {
@@ -895,10 +896,12 @@ article blockquote {
   border-radius: 30px;
   border: 2px solid #FFF;
 }
-.tile a div span {
-  margin: 0;
+.tile a span {
   padding: 0;
   color: #fff;
+  padding: .5rem;
+  border-radius: 30px;
+  border: 3px solid #FFF;
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -989,8 +992,9 @@ form input, form textarea {
   float: left;
   padding: 1.05rem 4%;
   margin: 0 0 4%;
-  background-color: #111;
-  border: 2px solid #111;
+  background-color: #000;
+  border: 2px solid #333;
+  border-radius: 2px;
   box-sizing: border-box;
   color: #fff;
   -webkit-transition: all .3s;
