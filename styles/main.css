@@ -437,7 +437,7 @@ article blockquote {
 }
 
 .title h1 {
-  font-weight: 700;
+  font-weight: 400;
 }
 .title p {
   font-size: 1.4rem;
@@ -452,10 +452,11 @@ article blockquote {
   max-width: 800px;
 }
 .text h2:first-child {
-  font-size: 3.2rem;
+  font-size: 4rem;
   font-weight: 400;
   line-height: 1.4;
-  padding: 0 0 3rem;
+  max-width: 800px;
+  padding: 0;
   color: #FFF;
 }
 
