@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,700');
+/* @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,700'); */
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('../fonts/MavenPro-Regular.ttf');
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('../fonts/MavenPro-Bold.ttf');
+  font-weight: bold;
+}
 
 :root { font-size: 16px; }
 *, *:after, *:before { margin: 0; padding: 0; }
@@ -11,8 +23,8 @@ body {
   display: block;
   background: #000;
   overflow-x: hidden;
-  font-family: 'Maven Pro', sans-serif;
-  font-weight: 700;
+  font-family: 'Maven Pro';
+  font-weight: 400;
 }
 header {
   position: fixed;
@@ -124,9 +136,10 @@ nav ul li:last-child a:after {
 #logo {
   float: left;
   margin: -.35rem 0 0;
-  padding: 0;
+  padding: 2rem;
+  font-family: 'Maven Pro';
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 400;
   max-width: 170px;
   text-align: left;
   line-height: 1;
@@ -214,7 +227,7 @@ section {
 
 a, button {
   color: #7cc8df;
-  font-family: 'Maven Pro', sans-serif;
+  font-family: 'Maven Pro';
   opacity: 1;
   text-decoration: none;
   cursor: pointer;
@@ -234,7 +247,7 @@ article a:hover, article a:focus {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Maven Pro', sans-serif;
+  font-family: 'Maven Pro';
   font-weight: 700;
 }
 
