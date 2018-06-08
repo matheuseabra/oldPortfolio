@@ -498,12 +498,6 @@ article blockquote {
   transition: transform 0.2s cubic-bezier(0.625,0.125,0.305,0.875),-webkit-transform 0.2s cubic-bezier(0.625,0.125,0.305,0.875);
 }
 
-.skill:hover {
-  -webkit-transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  transform: scale(1.02);
-}
-
 
 .skillGrid .skill-title {
   max-width: 550px;
@@ -904,17 +898,8 @@ article blockquote {
   border-radius: 30px;
   border: 2px solid #FFF;
 }
-.tile a span {
-  padding: 0;
-  color: #fff;
-  padding: .5rem;
-  border-radius: 30px;
-  border: 3px solid #FFF;
-  font-size: 1rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
+
+
 
 .tile a:hover p,
 .tile a:focus p {
